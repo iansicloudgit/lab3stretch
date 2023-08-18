@@ -3,7 +3,7 @@ pipeline {
     stages{ 
     stage (' Init '){
         steps {
-          sh  "rm docker rm -f $(docker ps -aq)"
+          sh  "rm docker rm -f '$(docker ps -aq)'"
         }
     }
     stage (' Build '){
